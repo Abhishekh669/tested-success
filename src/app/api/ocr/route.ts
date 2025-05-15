@@ -3,7 +3,7 @@ import OpenAI from 'openai';
 
 const openai = new OpenAI({
   baseURL: "https://openrouter.ai/api/v1",
-  apiKey: process.env.OPENROUTER_API_KEY || "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",
+  apiKey: process.env.OPENROUTER_API_KEY,
   defaultHeaders: {
     "HTTP-Referer": "https://localhost:3000", // Replace with your domain
     "X-Title": "Book Information Extractor" // Replace with your app name
